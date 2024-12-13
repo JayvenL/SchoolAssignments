@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Compilation step
+g++ -std=c++11 interrupts_101259149_101260364.cpp -o sim.o
+
+# Test Case 9 - RR Scheduler
+./sim.o input_data_9.txt RR

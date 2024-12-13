@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Item
+comment0.text=\n\ This\ class\ will\ create\ an\ item\ with\ a\ weight\ and\ a\ description\n\ The\ description\ gives\ a\ representation\ of\ the\ item\ in\ String\ from\n\ The\ weight\ will\ be\ a\ double\ holding\ the\ weight\ of\ the\ item\ in\ kg's\n\ These\ items\ can\ be\ added\ to\ diffrent\ rooms\n\n\ @author\ Jayven\ Larsen\n\ @version\ Feb\ 12\ 2024\n
+comment1.params=descrip\ weight
+comment1.target=Item(java.lang.String,\ double)
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Items\n\ @param\ descrip\ is\ the\ description\ of\ the\ item\n\ @param\ weight\ will\ be\ the\ weight\ of\ the\ item\n
+comment2.params=
+comment2.target=void\ getItemInfo()
+comment2.text=\n\ Returns\ a\ printed\ string\ of\ the\ description\ of\ the\ item\ (the\ weight\ and\ what\ the\ item\ is)\n\n\ No\ return,\ prints\ out\ the\ information\ of\ the\ item\n
+comment3.params=
+comment3.target=java.lang.String\ getName()
+numComments=4

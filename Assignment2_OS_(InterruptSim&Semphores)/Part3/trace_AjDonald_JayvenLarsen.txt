@@ -1,0 +1,3 @@
+FORK, 20
+EXEC program1, 60
+

@@ -1,0 +1,20 @@
+Part 2: 
+
+1) Go to the terminal and make your way to the A2/Part2 folder
+2) Make sure in Part_II_AjDonald_JayvenLarsen.cpp the correct path to the program 2 file is configured in the execl function
+
+3) Run the following commands:
+    1) g++ Part_II_AjDonald_JayvenLarsen.cpp -o Part2output
+    2) g++ Part_II_AjDonald_JayvenLarsen_program2
+    3) ./Part2ouput
+
+Part 3:
+MANUALLY RUN CODE:
+1) Go to the terminal and make your way to the A2/Part3 folder
+2) Run the following command:
+    1)g++ -std=c++11 interrupts_AjDonald_JayvenLarsen.cpp -I interrupts_AjDonald_JayvenLarsen.hpp -o test1.o 
+    2)./test1.o
+        
+3)Input the file names you want to use
+
+

@@ -1,0 +1,61 @@
+Output exmaple when process number hits 0:
+
+Process 1: Generated random number: 10
+Process 1: High value
+Process 1: Generated random number: 6
+Process 1: High value
+Process 1: Generated random number: 3
+Process 1: Low value
+Process 1: Generated random number: 0
+Process 1: Low value
+Process 1 finished
+Parent cleaned up shared memory
+
+Output example when process number hits 9 & Process 2 starts:
+
+Process 1: Generated random number: 2
+Process 1: Low value
+Process 1: Generated random number: 9
+Process 1: High value
+Process 2: Shared random number is: 9
+Process 2: Shared random number is: 10
+Process 2: Shared random number is: 6
+Process 2: Shared random number is: 1
+Process 2: Shared random number is: 7
+Process 2: Shared random number is: 3
+Process 2: Shared random number is: 5
+Process 2: Shared random number is: 4
+Process 2: Shared random number is: 5
+Process 2: Shared random number is: 10
+Process 2: Shared random number is: 8
+Process 2: Shared random number is: 1
+Process 2: Shared random number is: 1
+Process 2: Shared random number is: 10
+Process 2: Shared random number is: 7
+Process 2: Shared random number is: 6
+Process 2: Shared random number is: 2
+Process 2: Shared random number is: 3
+Process 2: Shared random number is: 2
+Process 2: Shared random number is: 7
+Process 2: Shared random number is: 2
+Process 2: Shared random number is: 10
+Process 2: Shared random number is: 4
+Process 2: Shared random number is: 4
+Process 2: Shared random number is: 1
+Process 2: Shared random number is: 2
+Process 2: Shared random number is: 9
+Process 2: Shared random number is: 4
+Process 2: Shared random number is: 1
+Process 2: Shared random number is: 2
+Process 2: Shared random number is: 1
+Process 2: Shared random number is: 4
+Process 2: Shared random number is: 1
+Process 2: Shared random number is: 5
+Process 2: Shared random number is: 5
+Process 2: Shared random number is: 1
+Process 2: Shared random number is: 3
+Process 2: Shared random number is: 10
+Process 2: Shared random number is: 10
+Process 2: Shared random number is: 0
+Process 2 finished
+Parent cleaned up shared memory
