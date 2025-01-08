@@ -6,7 +6,7 @@
 #define __A3_FUNCTIONS_H__
 #include "a3_nodes.h"
 
-/********** DON'T MODIFY **********/
+
 /*
    Function that creates a new user and adds it to a sorted (ascending order) linked list at
    the proper sorted location. Return the head of the list.
@@ -88,17 +88,17 @@ void print_menu();
 
 
 /* 
-   ******** DONT MODIFY THIS FUNCTION ********
+   
    Function that reads users from the text file.
    IMPORTANT: This function shouldn't be modified and used as is
-   ******** DONT MODIFY THIS FUNCTION ********
+   
 */
 user_t *read_CSV_and_create_users(FILE *file, int num_users);
 
 
-/********** DON'T MODIFY **********/
 
-// Extra functions' Prototypes/Declarations go here
+
+
 
 
 
