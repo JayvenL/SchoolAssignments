@@ -4,7 +4,7 @@
 */
 #ifndef __A3_NODES_H__
 #define __A3_NODES_H__
-/********** DON'T MODIFY **********/
+
 // Structure to represent a linked list of users
 typedef struct user
 {
