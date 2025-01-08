@@ -13,7 +13,7 @@
 
 int main()
 {
-    /******** DONT MODIFY THIS PART OF THE CODE ********/
+    
     /* THIS CODE WILL LOAD THE DATABASE OF USERS FROM THE FILE
        AND GENERATE THE STARTING LINKED LIST.
     */
@@ -27,13 +27,7 @@ int main()
     user_t *users = read_CSV_and_create_users(csv_file, 50);
 
     fclose(csv_file);
-    /******** DONT MODIFY THIS PART OF THE CODE ********/
-
-    /* IMPORTANT: You must use the users linked list created in the code above.
-                  Any new users should be added to that linked list.
-    */
-
-    // Your solution goes here
+   
     
 
     int choice;
