@@ -3,13 +3,8 @@
     Student Number	= 101260364
 */
 
-#include <stdlib.h>
-#include <assert.h>
-#include <stdio.h>
-#include <string.h>
-#include "a3_nodes.h"
 #include "a3_functions.h"
-#include "stdbool.h"
+
 
 
 

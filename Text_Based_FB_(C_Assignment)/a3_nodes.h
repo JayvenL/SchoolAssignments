@@ -5,6 +5,12 @@
 #ifndef __A3_NODES_H__
 #define __A3_NODES_H__
 
+#include <stdlib.h>
+#include <assert.h>
+#include <stdio.h>
+#include <string.h>
+#include "stdbool.h"
+
 // Structure to represent a linked list of users
 typedef struct user
 {

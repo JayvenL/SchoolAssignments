@@ -4,11 +4,7 @@
 */
 
 // Includes go here
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
-#include <stdbool.h>
-#include "a3_nodes.h"
+
 #include "a3_functions.h"
 
 int main()
