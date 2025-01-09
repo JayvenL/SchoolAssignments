@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=PlayAlarm
+comment0.text=\n\ Borrowed\ from\:\ http\://www.javaknowledge.info/play-sound-on-button-click-in-java/,\ except\n\ that\ I\ couldn't\ find\ the\ wav\ file,\ so\ I\ picked\ a\ couple\ from\ the\ internet.\n\ One\ is\ a\ train,\ the\ other\ is\ a\ beep.\ \ I\ also\ added\ some\ more\ functionality.\n\ \n\ Select\ main\ to\ run\ this\ (not\ the\ constructor).\n\ \n\ @author\ javaknowledge.info\n\ @version\ May,\ 2013\n\ \n\ @author\ Lynn\ Marshall\n\ @version\ November,\ 2017\n
+comment1.params=
+comment1.target=PlayAlarm()
+comment2.params=e
+comment2.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment3.params=e
+comment3.target=void\ mouseEntered(java.awt.event.MouseEvent)
+comment3.text=\n\ Detects\ when\ the\ mouse\ enters\ the\ component\ btn4.\ \ We\ are\ only\ "listening"\ to\ the\n\ btn4.\ \ We\ play\ a\ beep\ when\ the\ mouse\ goes\ into\ that\ component.\n\ \n\ @param\ e\ The\ mouse\ event\ triggered\ when\ the\ mouse\ was\ moved\ into\ the\ component\n
+comment4.params=e
+comment4.target=void\ mouseExited(java.awt.event.MouseEvent)
+comment4.text=\n\ Detects\ when\ the\ mouse\ exits\ the\ component\ btn4.\ \ We\ are\ only\ "listening"\ to\ the\n\ btn4.\ \ We\ stop\ playing\ the\ beep\ when\ the\ mouse\ exits\ that\ component.\n\ \n\ @param\ e\ The\ mouse\ event\ triggered\ when\ the\ mouse\ was\ moved\ out\ of\ the\ component\n
+comment5.params=e
+comment5.target=void\ mouseClicked(java.awt.event.MouseEvent)
+comment5.text=\n\ Not\ used.\n\ \n\ @param\ e\ The\ mouse\ event\ triggered\ when\ the\ mouse\ was\ moved\ out\ of\ the\ component\n
+comment6.params=e
+comment6.target=void\ mousePressed(java.awt.event.MouseEvent)
+comment6.text=\n\ Not\ used.\n\ \n\ @param\ e\ The\ mouse\ event\ triggered\ when\ the\ mouse\ was\ moved\ out\ of\ the\ component\n
+comment7.params=e
+comment7.target=void\ mouseReleased(java.awt.event.MouseEvent)
+comment7.text=\n\ Not\ used.\n\ \n\ @param\ e\ The\ mouse\ event\ triggered\ when\ the\ mouse\ was\ moved\ out\ of\ the\ component\n
+comment8.params=args
+comment8.target=void\ main(java.lang.String[])
+numComments=9
