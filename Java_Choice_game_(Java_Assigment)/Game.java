@@ -48,6 +48,9 @@ public class Game
         previousRoom = null;
         previousRoomStack = new Stack<Room>();
 
+        createRooms();
+        play();
+
 
     }
 
