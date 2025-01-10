@@ -1,7 +1,7 @@
-import java.util.ArrayList;
 import java.util.Set;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.ArrayList; // or java.util.*; and replace the above
 
 /**
  * Class Room - a room in an adventure game.
@@ -16,22 +16,27 @@ import java.util.Iterator;
  * @author  Michael Kolling and David J. Barnes
  * @version 2006.03.30
  * 
- * @author Lynn Marshall
- * @version October 21, 2012
+ * @author Lynn Marshall 
+ * @version A1 Solution
+ *
+ * @author Jayven Larsen 101260364
+ * @version A2 v1.0
  */
 
 public class Room 
 {
     private String description;
-    private HashMap<String, Room> exits;// stores exits of this room.
+    private HashMap<String, Room> exits;        // stores exits of this room.
 
-    public ArrayList<Item> item_list;
+    // the items in this room
+    protected ArrayList<Item> items;
 
+    static private ArrayList<Room> rooms = new ArrayList<Room>();
+    
     /**
      * Create a room described "description". Initially, it has
      * no exits. "description" is something like "a kitchen" or
      * "an open court yard".
-     * Creates an array for new items to be added in the background
      * 
      * @param description The room's description.
      */
@@ -39,10 +44,28 @@ public class Room
     {
         this.description = description;
         exits = new HashMap<String, Room>();
-        item_list = new ArrayList<Item>();
+        items = new ArrayList<Item>();
+        rooms.add(this);
 
 
-        
+    }
+    
+    /**
+     * Add an item to the room, best to check that it's not null.
+     * 
+     * @param item The item to add to the room
+     */
+    public void addItem(Item item) 
+    {
+        if (item!=null) { // not required, but good practice
+            items.add(item);
+        }
+    }
+
+    public void removeItem(Item item){
+        if (item!=null) { // not required, but good practice
+            items.remove(item);
+        }
     }
 
     /**
@@ -71,17 +94,16 @@ public class Room
      * Return a long description of the room in the form:
      *     You are in the kitchen.
      *     Exits: north west
+     *     Items: 
+     *        a chair weighing 5 kgs.
+     *        a table weighing 10 kgs.
      *     
      * @return A long description of this room
      */
     public String getLongDescription()
     {
-
-        System.out.println("You are " + description + ".\n" + getExitString());
-        for (Item item : item_list) {
-            item.getItemInfo();
-        }
-        return"";
+        return "You are " + description + ".\n" + getExitString()
+            + "\nItems:" + getItems();
     }
 
     /**
@@ -110,6 +132,29 @@ public class Room
     public Room getExit(String direction) 
     {
         return exits.get(direction);
+    }
+    
+    /**
+     * Return a String representing the items in the room, one per line.
+     * 
+     * @return A String of the items, one per line
+     */
+    public String getItems() 
+    {
+        // let's use a StringBuilder (not required)
+        StringBuilder s = new StringBuilder();
+        for (Item i : items) {
+            s.append("\n    " + i.getDescription());
+        }
+        return s.toString(); 
+    }
+    /**
+     * Static method which returns the array list of rooms
+     *
+     * @return Array list of object type rooms
+     */
+    static public ArrayList<Room> getRooms(){
+        return rooms;
     }
 }
 

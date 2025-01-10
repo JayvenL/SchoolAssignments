@@ -19,6 +19,9 @@ import java.util.StringTokenizer;
  * 
  * @author Lynn Marshall
  * @version October 21, 2012
+ *
+ * @author Jayven Larsen
+ * @version Jan 30th 2024
  */
 public class Parser 
 {

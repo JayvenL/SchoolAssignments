@@ -9,15 +9,17 @@
  * @version 2006.03.30
  * 
  * @author Lynn Marshall
- * @version October 21, 2012
+ * @version A1 Solution
+ *
+ * @author Jayven Larsen 101260364
+ * @version A2 v1.0
  */
 
 public class CommandWords
 {
-    String command_lst;
     // a constant array that holds all valid command words
     private static final String[] validCommands = {
-        "go", "quit", "help", "look", "eat", "back", "stackBack", "take","drop"
+        "go", "quit", "help", "look", "eat", "back", "stackBack", "take", "drop","charge", "fire"
     };
 
     /**
@@ -25,7 +27,7 @@ public class CommandWords
      */
     public CommandWords()
     {
-        //
+        // nothing to do at the moment...
     }
 
     /**
@@ -45,17 +47,18 @@ public class CommandWords
     }
 
     /**
-     * Print all valid commands to System.out.
+     * Returns a String containing all valid commands.
+     * 
+     * @return a String of the valid commands
      */
     public String getCommandList() 
     {
-        StringBuilder commandList = new StringBuilder();
-
+        // let's use a StringBuilder (not required)
+        StringBuilder s = new StringBuilder();
         for(String command: validCommands) {
-            // removing whitespace with .trim() method.
-            commandList.append(command).append(" ");
+            s.append(command + "  ");
         }
-        return commandList.toString();
-
+        String str = s.toString(); 
+        return str.trim(); // removes spaces from beginning/end
     }
 }

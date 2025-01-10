@@ -1,46 +1,57 @@
 
 /**
- * This class will create an item with a weight and a description
- * The description gives a representation of the item in String from
- * The weight will be a double holding the weight of the item in kg's
- * These items can be added to diffrent rooms
+ * This class represents an item which may be put
+ * in a room in the game of Zuul.
+ * 
+ * @author Lynn Marshall 
+ * @version A1 Solution
  *
- * @author Jayven Larsen
- * @version Feb 12 2024
+ * @author Jayven Larsen 101260364
+ * @version A2 v1.0
  */
 public class Item
 {
-    // instance variables - replace the example below with your own
-    private String description_of_item;
-    private double weight_of_item;
+    // description of the item
+    private String description;
+    
+    // weight of the item in kilgrams 
+    private double weight; 
+
     private String name;
 
     /**
-     * Constructor for objects of class Items
-     * @param descrip is the description of the item
-     * @param weight will be the weight of the item
+     * Constructor for objects of class Item.
+     *
+     *
+     * @param description The description of the item
+     * @param weight The weight of the item
+     * @param name the name of the item
      */
-    public Item(String descrip, double weight)
+    public Item(String description, double weight, String name)
     {
-        // initialise instance variables
-        description_of_item = descrip;
-        name = descrip;
-        weight_of_item = weight;
+        this.description = description;
+        this.name = name;
+        this.weight = weight;
     }
 
     /**
-     * Returns a printed string of the description of the item (the weight and what the item is)
-     *
-     * No return, prints out the information of the item
+     * Returns a description of the item, including its
+     * description and weight.
+     * 
+     * @return  A description of the item
      */
-    public void getItemInfo()
+    public String getDescription()
     {
-        System.out.println( "a " + description_of_item + " that weighs " + weight_of_item +"kg");
-        
+        return name+ " : "+description + " that weighs " + weight + "kg.";
     }
 
+    /**
+     * Return the name of the item
+     *
+     * @return  the name of the item
+     */
     public String getName()
     {
-     return name;
+        return name;
     }
 }
